@@ -1,0 +1,18 @@
+button{
+    color: white;
+    border-radius: 5px;
+    background-color: blue;
+    width: 2cm;
+    height: 1cm;
+    border: none;
+}
+
+input[type = 'radio']:checked::after{
+    background-color: blue;
+    border-color: blue;
+}
+
+input[type="checkbox"]#checkbox1:checked + span {
+    border-color:blue;
+    background-color:blue;
+}
