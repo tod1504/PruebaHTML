@@ -36,10 +36,7 @@ div.iz{
 }
 div.der{
     font-size: 13px;
-    right: 8px;
-    bottom: 8px;
-    width: 49%;
-    height: 78%;
+    
     background-color: rgba(83, 83, 237, 0.275);
     color: rgb(76, 15, 84);
 }
