@@ -38,20 +38,9 @@ input[type = 'radio']:checked::after{
 	text-shadow: 0px;
 	left: 3px;
 	font-size: 32px;
-}
-
-input[type="checkbox"] {
-    -webkit-appearance: none;
-	background-color: #fafafa;
-	border: 1px solid #cacece;
-	padding: 7px;
-	border-radius: 3px;
-	display: inline-block;
-}
 
 input[type="checkbox"]:checked  {
     -webkit-appearance: none;
 	border: 1px;
     border-color: rgb(51, 88, 211);
     background-color: rgb(51, 88, 211);
-}
