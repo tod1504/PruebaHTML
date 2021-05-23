@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, /*Output, EventEmitter*/} from '@angular/core';
 
 @Component({
   selector: 'app-cabecera',
   templateUrl: './cabecera.component.html',
   styleUrls: ['./cabecera.component.css']
 })
-export class CabeceraComponent implements OnInit {
 
+export class CabeceraComponent{
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  /*setCuerpo: boolean
 
+  @Output() chngCuerpo = new EventEmitter<boolean>();
+
+  sendCuerpo() {
+    this.chngCuerpo.emit(this.setCuerpo)
+  }*/
+  
 }

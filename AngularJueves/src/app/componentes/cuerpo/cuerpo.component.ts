@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { PersonajesService } from 'src/app/servicios/personajes.service';
+
 
 @Component({
   selector: 'app-cuerpo',
@@ -6,4 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class CuerpoComponent{
+  mostrar = true;
+  personajes = [];
+  
+  informacion = {
+    autor: 'Cristiano Ronaldo',
+    frase: 'Siuuuuuuuuu'
+  };
+
+  constructor(private servicioPersonajes: PersonajesService) {
+    console.log(this.servicioPersonajes.leerPersonajes());
+    this.personajes = this.servicioPersonajes.leerPersonajes();
+  }
 }
