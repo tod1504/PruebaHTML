@@ -1,4 +1,12 @@
-<app-cabecera></app-cabecera>
+<app-cabecera (chngCuerpo)='rcvCuerpo($event)'></app-cabecera>
 
-<app-cuerpo></app-cuerpo>
+<!--div [ngSwitch]="setCuerpo">
+    <div *ngSwitchCase=true>
+        <app-cuerpo></app-cuerpo>
+    </div>
+    <div *ngSwitchCase=false>
+        <app-cuerpo2></app-cuerpo2>
+    </div>
+</div-->
 
+<router-outlet></router-outlet>

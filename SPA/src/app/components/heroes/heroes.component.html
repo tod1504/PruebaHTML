@@ -1,1 +1,17 @@
-<p>heroes works!</p>
+
+<div class="container py-3">
+    <div class="row row-cols-md-3">
+        <div class="col" *ngFor="let h of heroes">
+            <div class="card" style="width: 80%;">
+                <img [src]="h.img" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ h.nombre }}</h5>
+                    <h6 class="card-title">{{ h.casa }} </h6>
+                    <p class="card-text">{{ h.bio }}</p>
+                    <p class="card-text"><small class="text-muted">{{ h.aparicion }}</small></p>
+                    <button type="button" class="btn btn-outline-primary">Saber mas</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
