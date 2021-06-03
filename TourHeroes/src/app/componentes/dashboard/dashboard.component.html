@@ -1,0 +1,12 @@
+<div class="container py-3">
+    <h3 style="color: rgb(25, 62, 97); text-align: center;">Top Heroes</h3>
+    <div class="row row-cols-md-4">
+        <div class="col" *ngFor="let h of he">
+            <div class="card" style="width: 80%;background-color: rgb(25, 62, 97);color: white;text-align: center;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ h.name }}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
