@@ -1,0 +1,17 @@
+<div   class="container-fluid p-4">
+    <div *ngFor='let her of heroes'>
+        <div class="card mb-3" style="max-width: 200px; max-height: 40px;">
+            <div class="row g-0">
+                <div class="col-md-4" style="padding: 10px;background-color: rgb(25, 62, 97); color: white; max-height: 38px; max-width: 40px; ">
+                    <p class="card-title">{{ her.id }}</p>
+                </div>
+                <div class="col-md-8" style="padding: 10px;">
+                    <div>
+                        <p class="card-text">{{ her.name }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
