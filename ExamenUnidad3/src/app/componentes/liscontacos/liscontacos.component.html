@@ -1,0 +1,20 @@
+
+<div class="container">
+    <h3>Lista de Contactos</h3>
+    <div class="row row-cols-md-3">
+        <div class="col" *ngFor="let c of contactos">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h3 class="card-title"> {{ c.apellidos }}, {{ c.nombre }} ({{c.genero}}) </h3>
+                    <p class="card-text"> {{ c.descripcion }} </p>
+                <div class='card-footer'>
+                    <div class="d-grid">
+                        <button class="btn btn-primary" type="button" (click)='botonClick()'>Ver detalles</button>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+                    

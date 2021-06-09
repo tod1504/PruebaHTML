@@ -1,0 +1,55 @@
+<div class="container py-3">
+    <h3>Añadir Contacto</h3>
+    <form autocomplete="off" (ngSubmit)="guardar(form)" #form="ngForm">
+    
+        <div class="form-row">
+            <div class="col">
+                <label>Nombre (*)</label>
+                <input type="text" class="form-control" placeholder="Escribe un nombre..." name="nombre" required>
+            </div>
+            <div class="col">
+                <label>Apellidos (*)</label>
+                <input type="text" class="form-control" placeholder="Escribe tus apellidos..." name="apellidos" required>
+            </div>
+        </div>
+    
+        <div class="form-row">
+            <div class="col">
+                <label class="col-2 col-form-label">Descripcion contacto</label>
+                <textarea class="form-control" type="text" placeholder="Escribe una descripcion de contacto..."
+                    name="descripcion" required></textarea>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col">
+                <label>Sexo</label>
+                <select class="form-select" aria-label="Default select example" name="genero">
+                    <option selected>Hombre</option>
+                    <option value="1">Mujer</option>
+                </select>
+            </div>
+            <div class="col">
+                <label>Empresa</label>
+                <input type="text" class="form-control" placeholder="Escribe nombre de su Empresa.." name="empresa">
+            </div>
+        </div>
+    
+        <div class="form-row">
+            <div class="col">
+                <label>Email (*)</label>
+                <input type="email" class="form-control" placeholder="Escribe tu email..." name="correo" required>
+            </div>
+            <div class="col">
+                <label>Telefono (*)</label>
+                <input type="text" class="form-control" placeholder="Escribe un telefono..." name="Telefono" required>
+            </div>
+        </div>
+        
+        <form class="form-row">
+            <button class="btn btn-primary" type="submit">
+                Añadir contacto
+            </button>
+        </form>
+    </form>
+</div>
