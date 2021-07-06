@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row mb-3">
+        <div class="col-12">
+            <form [formGroup]="formulario">
+                    
+                <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Johnny">
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo:</label>
+                    <input type="text" class="form-control" id="correo" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Rol:</label>
+                    <select class="form-select" id="rol" aria-label="Default select example">
+                        <option selected>Seleccionar rol: </option>
+                        <option value="USER_ROLE">USUARIO</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
