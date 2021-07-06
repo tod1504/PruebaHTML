@@ -1,0 +1,23 @@
+<table class="table">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+        <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody *ngFor='let us of usuarios; let i = index' >
+        <tr>
+        <th scope="row">{{ i+1 }}</th>
+        <td>{{ us.nombre }}</td>
+        <td>{{ us.correo }}</td>
+        <td>{{ us.rol }}</td>
+        <td>
+            <button  class="btn btn-secondary"> Actualizar </button>    
+            <button (click)="eliminar(i)" class="btn btn-danger"> Eliminar </button>
+        </td>
+        </tr>
+    </tbody>
+</table>

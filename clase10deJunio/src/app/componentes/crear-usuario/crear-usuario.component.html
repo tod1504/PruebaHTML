@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row mb-3">
+        <div class="col-12">
+            <form [formGroup]="formulario" (ngSubmit)="guardar()">
+
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input formControlName="nombre" type="text" class="form-control" id="nombre" placeholder="Johnny" required>
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo:</label>
+                    <input formControlName="correo" type="text" class="form-control" id="correo" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contraseña" class="form-label">Contraseña</label>
+                    <input formControlName="password" type="password" class="form-control" id="contraseña" placeholder="Ingrese contraseña" required>
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Rol:</label>
+                    <select class="form-select" aria-label="Default select example" formControlName="rol" placeholder="Seleccionar rol" required>
+                        <option value="USER_ROLE">USUARIO</option>
+                        <option value="VENTAS_ROLE">VENTAS</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar informacion</button>
+            </form>
+        </div>
+    </div>
+</div>
